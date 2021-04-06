@@ -1,0 +1,10 @@
+<router-outlet></router-outlet>
+
+<button (click)="changeTitle()"> Change Title</button>
+
+<app-title (counter)="onCounterChanged()" [title]="title"></app-title>
+
+<b>Title hover counter is {{titleHoverCounter}}</b>
+
+
+<app-my-table [customers]="customers"></app-my-table>

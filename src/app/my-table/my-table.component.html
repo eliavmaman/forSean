@@ -1,0 +1,10 @@
+<table *ngIf="customers" border="1">
+  <tr>
+    <th>Name</th>
+    <th>Password</th>
+  </tr>
+  <tr *ngFor="let c of customers">
+    <td>{{c.name}}</td>
+    <td>{{c.password}}</td>
+  </tr>
+</table>
