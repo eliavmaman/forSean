@@ -1,13 +1,14 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {ListComponent} from './list/list.component';
 
 
 
 const appRoutes: Routes = [
-  // {
-  //   path: 'home',
-  //   component: HomePageComponent,
-  // }
+  {
+    path: '',
+    component: ListComponent,
+  }
 ];
 
 @NgModule({
@@ -15,7 +16,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       {
-        enableTracing: false,
+        //enableTracing: false,
       }
     )
   ],
