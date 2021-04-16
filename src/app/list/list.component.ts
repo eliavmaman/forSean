@@ -33,7 +33,17 @@ export class ListComponent implements OnInit {
 
   }
 
-  saveSortedList() {
-    this.global.saveSortedList(this.sortedList);
+  saveChanges() {
+    this.global.saveChanges(this.sortedList,this.list);
+  }
+
+  rowClicked(c: any) {
+    this.list.forEach((r: any) => {
+      r.active = false;
+    });
+    this.sortedList = [];
+    this.selectedRow = c;
+    c.active = true;
+
   }
 }

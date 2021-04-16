@@ -11,6 +11,11 @@ export class GlobalService {
     {
       name: 'yoyo',
       lastName: 'koko',
+      flags: [
+        {name: 'Is cool', value: false},
+        {name: 'Is Funny', value: true},
+        {name: 'Is from Israel', value: false},
+      ],
       selection: [
         {name: 'user1', url: 'https://randomuser.me/api/portraits/women/1.jpg'},
         {name: 'user2', url: 'https://randomuser.me/api/portraits/women/2.jpg'},
@@ -21,6 +26,11 @@ export class GlobalService {
     {
       name: 'shlomi',
       lastName: 'cohen',
+      flags: [
+        {name: 'Is cool', value: true},
+        {name: 'Is Funny', value: false},
+        {name: 'Is from Israel', value: false},
+      ],
       selection: [
         {name: 'user1', url: 'https://randomuser.me/api/portraits/women/5.jpg'},
         {name: 'user2', url: 'https://randomuser.me/api/portraits/women/6.jpg'},
@@ -40,8 +50,9 @@ export class GlobalService {
     //this.http.get('url to get list');
   }
 
-  saveSortedList(sortedList: any) {
+  saveChanges(sortedList: any, list: any) {
     this.sortedList = sortedList;
+    this.list = list;
     //return this.http.post('url to save list');
 
   }

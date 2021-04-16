@@ -11,6 +11,7 @@ import {MyTableComponent} from './my-table/my-table.component';
 import {ListComponent} from './list/list.component';
 import {SortablejsModule} from 'ngx-sortablejs';
 import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import {HttpClientModule} from '@angular/common/http';
     ListComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
